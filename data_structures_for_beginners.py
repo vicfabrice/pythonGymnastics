@@ -44,5 +44,18 @@ oddInd = oddIndex(listOne)
 evenInd = evenIndex(listTwo)
 result = oddIndexElementsFromFirstListAndEvenFromSecond(listOne,listTwo)
 print("Odd index numbers list: {}\n Even index numbers list: {}\n Resulting list: {}".format(oddInd,evenInd,result))
-    
-        
+
+#Exercise Question 2: Given an input list removes the element at index 4 and 
+#add it to the 2nd position and also, at the end of the list
+
+#Ok, hello lists my old friend
+
+inputList = [5,4,3,2,1]
+
+print("Original list ", inputList)
+elemAtIndexFour = inputList.pop(4)
+print("List after removing elem at index 4 ", inputList)
+inputList.insert(2,elemAtIndexFour)
+print("List after adding element at index 2 ", inputList)
+inputList.append(elemAtIndexFour)
+print("List after adding element at last ", inputList)
